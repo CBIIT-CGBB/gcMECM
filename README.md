@@ -18,12 +18,12 @@ Graph-based clustering algorthim was used to construct modules with mutually exc
 
 # Tutorial and examples
 ### Installation
-```
+``` bash
 library(devtools)
 remotes::install_github("CBIIT-CGR/gcMECM")
-```
+``` bash
 ### Cluster using Fisher's p values
-```
+``` bash
 library(gcMECM)
 
 ## load the output of Fisher's test
@@ -34,9 +34,9 @@ dat.d  <- p2dist(dat.s[,c(gene.i,gene.j)], as.numeric(dat.s[,pvalue.l]));
 
 ## cluster from the distance matrix 
 clu    <- dist2cluster(dat.d, wt=wt, method="louvain");
-```
+``` bash
 
-#[example code] (R/p2dist.R)
+[example code] (R/p2dist.R)
 
 ### Mapping clusters on the pathways
 ```
