@@ -18,12 +18,12 @@ Graph-based clustering algorthim was used to construct modules with mutually exc
 
 # Tutorial and examples
 ### Installation
-``` bash
+```
 library(devtools)
 remotes::install_github("CBIIT-CGR/gcMECM")
 ```
 ### Cluster using Fisher's p values
-``` bash
+```
 library(gcMECM)
 
 ## load the output of Fisher's test
@@ -50,7 +50,10 @@ length(out.t);
 out.s  <- data.frame(gene=clu$clu$names, cluster=clu$clu$membership);
 write.table(out.s, gzfile(outf), sep="\t", quote=F, row.names=F);
 ```
+### Mapping clusters on the pathways
+```
 
+```
 
 # Advanced (optional) steps
 
