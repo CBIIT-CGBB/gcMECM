@@ -21,9 +21,10 @@ Graph-based clustering algorthim was used to construct modules with mutually exc
 ```r
 library(devtools)
 remotes::install_github("CBIIT-CGR/gcMECM")
-```
+``` 
+ 
 ### Cluster using Fisher's p values
-[example code] (R/p2dist.R)
+![example code] (R/p2dist.R)
 
 ```r
 library(gcMECM)
