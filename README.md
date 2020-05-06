@@ -1,4 +1,5 @@
 # gcMECM: Graphical Clustering of Mutual Exclusivity of Cancer Mutations to identify sub-biological functions from pathways
+[example code] (R/p2dist.R)
 
 The package combines graph clustering, mutation association, and gene interaction 
 by the mutually exclusively mutated gene sub-networks to identify sub-biological functions from 
@@ -18,13 +19,13 @@ Graph-based clustering algorthim was used to construct modules with mutually exc
 
 # Tutorial and examples
 ### Installation
-```r
+
 library(devtools)
 remotes::install_github("CBIIT-CGR/gcMECM")
-``` 
+ 
  
 ### Cluster using Fisher's p values
-![example code] (R/p2dist.R)
+[example code] (R/p2dist.R)
 
 ```r
 library(gcMECM)
