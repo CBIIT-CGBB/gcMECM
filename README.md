@@ -17,6 +17,11 @@ The mis-sense mutation and clinical outcome datasets for LUAD (Lung Adenocarcino
 Graph-based clustering algorthim was used to construct modules with mutually exclusive mutation patterns in the R platform. The process consists of three steps: First, generate the pairwise gene-gene adjacency distance matrix from the p-value of one-tailed Fisher’s exact test and generalized linear models (glm). Select gene pairs with ƒ p-value < 0.0001 and negative correlation in glm. The Fisher’s exact test p values are used as the distance in the matrix. Next, The adjacency distance matrix was converted into a weighted graph or network using R package igraph. The resulting graph was clustered into modules with the Louvain algorithm, which is an efficient graph-clustering method based on the modularity measure and a heuristic approach (Blondel, 2008), by applying the cutoff of edge values less than 1.00E-08 and 1.00E-12 in BRCA and LUAD respectively. In each module, genes are closely related to each other with negative relationships due to the mutually exclusive mutations. Modules with less that three genes are removed from further analysis. Lastly, each module was overlayed onto canonical pathways from NCI Ras pathway (https://www.cancer.gov/research/key-initiatives/ras/ras-central/blog/2015/ras-pathway-v2) or KEGG to identify sub-networks, which composes of genes directly connected in both mutually exclusive modules and canonical pathways. A combined p-value for sub-networks were calculated with gene-pair fisher’s tests using combine.test function in R package survcomp. All sub-networks in the context of pathways were visualized with R package igraph and further examined for enrichment analysis with g:Profiler (https://biit.cs.ut.ee/gprofiler/gost) against Gene Ontology and KEGG databases and survival analysis with R survival package.
 
 # Tutorial and examples
+### Installation
+``` bash
+library(devtools)
+remotes::install_github("CBIIT-CGR/gcMECM")
+```
 
 # Advanced (optional) steps
 
