@@ -36,7 +36,7 @@ dat.d  <- p2dist(dat.s[,c(gene.i,gene.j)], as.numeric(dat.s[,pvalue.l]));
 ## cluster from the distance matrix 
 clu    <- dist2cluster(dat.d, wt=wt, method="louvain");
 ```
-Doanload the exmaple codes ([link](R/p2dist.R))
+Doanload the exmaple codes ([link](examples/02p2cluster.R))
 ### Mapping clusters on the pathways
 ```r
 
