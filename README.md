@@ -40,8 +40,20 @@ Doanload the exmaple codes ([link](examples/02p2cluster.R))
 ### Mapping clusters on the pathways
 ```r
 
-```
+library(gcMECM);
+## load the pathway data
+library(NCIRASPathway);
 
+## get genes of the pathway
+g.xy  <- get_node_layout();
+
+## load gene relationships of the pathway
+pdat  <- get_relations()
+
+## read cluster data from dist2cluster
+clu.d  <- read.table(gzfile(infile), header=T);
+```
+Doanload the exmaple codes ([link](examples/03cluster_map.R))
 # Advanced (optional) steps
 
 # References
