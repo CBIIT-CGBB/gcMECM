@@ -59,10 +59,10 @@ write.table(out.s, outf, sep="\t", quote=F, row.names=F);
 write.table(out.n, outf2, sep="\t", quote=F, row.names=F);
 
 ## plot network
-pdf(pdff, 12, 12);
-par(mfrow=c(3, 3));
+pdf(pdff, 4, 12);
+par(mfrow=c(3, 1));
 clu.n <- paste0(out.n[,1], ".", out.n[,2]);
-cl.u  <- unique(clu.n);
+cl.u  <- unique(clu.n)[c(1,2,5)];
 for (c.j in cl.u){
   out.j <- which(clu.n==c.j);
   out.x <- out.n[out.j,];
