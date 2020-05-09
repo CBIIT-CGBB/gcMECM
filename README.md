@@ -13,11 +13,11 @@ gcMECM also provides informative visualization functionality of mutual exclusivi
 The mis-sense mutation and clinical outcome datasets for BRCA (Breast invasive carcinoma) in The Cancer Genome Atlas (TCGA) were obtained from The NCI Genomic Data Commons (GDC) (https://portal.gdc.cancer.gov, version 6). RAS pathway v2.0 is obtained from NCI Ras Initiative  (https://www.cancer.gov/research/key-initiatives/ras/ras-central/blog/2015/ras-pathway-v2). The pathway structure and gene coordinates were created manually for the visualization. KEGG pathway images and gene relationships were from KEGG database (https://www.genome.jp/kegg/pathway.html).
 
 ### Detection of modules with mutually exclusive mutations 
-#### step 1
+#### Step 1
 Generate the pairwise gene-gene adjacency distance matrix from the p-value of one-tailed Fisher’s exact test and generalized linear models (glm). Select gene pairs with smaller p-values and negative correlation in glm. The Fisher’s exact test p values are used as the distance in the matrix.
-#### step 2
+#### Step 2
 Convert the distance matrix into a weighted graph or network using R package igraph. The resulting graph was clustered into modules with the Louvain algorithm. 
-#### step 3
+#### Step 3
 Overlay the modules onto canonical the pathways.
 
 # Tutorial and examples
