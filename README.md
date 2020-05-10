@@ -63,5 +63,9 @@ Download the exmaple codes ([03cluster_map.R](examples/03cluster_map.R)) . The o
 
 # Advanced (optional) steps
 ### Mutually exclusive mutation plots
+partial model [code](examples/04_1plot_ME.R) and sub-network [code](examples/04_2plot_ME.R)
 
-# References
+<img src="examples/04_1plot_ME.png" width="300" height="300">  <img src="examples/03_2cluster_map.png" width="90" height="300">
+
+
+
