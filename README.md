@@ -57,13 +57,13 @@ pdat  <- get_relations()
 ## read cluster data from dist2cluster
 clu.d  <- read.table(gzfile(infile), header=T);
 ```
-Download the exmaple codes ([03cluster_map.R](examples/03cluster_map.R)) . The output figures are as the follows (three sub-networks in the pathway and plots).
+Download the exmaple codes ([R codes](examples/03cluster_map.R)) . The output figures are as the follows (three sub-networks in the pathway and plots).
 
 <img src="examples/03_1cluster_map.png" width="400" height="280">  <img src="examples/03_2cluster_map.png" width="90" height="280">
 
 # Advanced (optional) steps
 ### Mutually exclusive mutation plots
-partial model ([code](examples/04_1plot_ME.R)) and sub-network ([code](examples/04_2plot_ME.R))
+For partial model ([R codes](examples/04_1plot_ME.R)) and sub-networks ([R codes](examples/04_2plot_ME.R))
 
 <img src="examples/04_1plot_ME.png" width="350" height="300">  <img src="examples/04_2plot_ME.png" width="90" height="300">
 
