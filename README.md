@@ -57,7 +57,10 @@ pdat  <- get_relations()
 ## read cluster data from dist2cluster
 clu.d  <- read.table(gzfile(infile), header=T);
 ```
-Download the exmaple codes ([03cluster_map.R](examples/03cluster_map.R))
+Download the exmaple codes ([03cluster_map.R](examples/03cluster_map.R)) . The output figures are as the follows.
+
+
+
 # Advanced (optional) steps
 
 # References
