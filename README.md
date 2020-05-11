@@ -1,7 +1,7 @@
 # gcMECM: Graphical Clustering of Mutual Exclusivity of Cancer Mutations 
 
 The package combines graph clustering, mutation association, and gene interaction 
-by the mutually exclusively mutated gene sub-networks **to identify sub-biological functions from 
+by the mutually exclusively mutated gene sub-networks **to identify sub-networks with distinct biological functions from 
 pathways**. The sub-networks reveal 
 crucial genes in the canonical pathway and discover new cancer-relevant genes and relative biological 
 functions, which could used to build better prediction models of clinical response and survival. 
@@ -18,7 +18,7 @@ Generate the pairwise gene-gene adjacency distance matrix from the p-value of on
 #### Step 2
 Convert the distance matrix into a weighted graph or network using R package igraph. The resulting graph was clustered into modules with the Louvain algorithm. 
 #### Step 3
-Overlay the modules onto canonical the pathways.
+Overlay the modules onto the canonical pathways.
 
 # Tutorial and examples
 ### Installation
