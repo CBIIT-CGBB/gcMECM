@@ -63,7 +63,7 @@ Download the exmaple codes ([R codes](examples/03cluster_map.R)) . The output fi
   
 The option exmaple codes ([R codes](examples/05kegg_pathway.R)) . The output figures are as the follows (two sub-networks in the pathway and plots).
 
-<img src="examples/05kegg_map.png" width="400" height="280">  <img src="examples/05kegg_network.png" width="120" height="280">
+<img src="examples/05kegg_map.png" width="400" height="200">  <img src="examples/05kegg_network.png" width="160" height="200">
 
 <img src="examples/03_1cluster_map.png" width="400" height="280">  <img src="examples/03_2cluster_map.png" width="90" height="280">
 
