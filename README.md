@@ -69,7 +69,7 @@ The option exmaple codes ([R codes](examples/05kegg_pathway.R)) were for KEGG da
 ### Mutually exclusive mutation plots
 For partial model ([R codes](examples/04_1plot_ME.R)) and sub-networks ([R codes](examples/04_2plot_ME.R))
 
-<img src="examples/04_1plot_ME.png" width="350" height="300">  <img src="examples/04_2plot_ME.png" width="90" height="300">
+<img src="examples/04_1plot_ME.png" width="350" height="250">  <img src="examples/04_2plot_ME.png" width="90" height="250">
 
 
 
