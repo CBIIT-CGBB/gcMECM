@@ -10,7 +10,7 @@ gcMECM also provides informative visualization functionality of mutual exclusivi
 # Introduction
 
 ### Mutation and pathway data
-The mis-sense mutation and clinical outcome datasets for BRCA (Breast invasive carcinoma) in The Cancer Genome Atlas (TCGA) were obtained from The NCI Genomic Data Commons (GDC) (https://portal.gdc.cancer.gov, version 6). RAS pathway v2.0 is obtained from NCI Ras Initiative  (https://www.cancer.gov/research/key-initiatives/ras/ras-central/blog/2015/ras-pathway-v2). The pathway structure and gene coordinates were created manually for the visualization. KEGG pathway images and gene relationships were from KEGG database (https://www.genome.jp/kegg/pathway.html).
+The mis-sense mutation and clinical outcome datasets for BRCA (Breast invasive carcinoma) in The Cancer Genome Atlas (TCGA) were obtained from [The NCI Genomic Data Commons (GDC)](https://portal.gdc.cancer.gov)(, version 6). RAS pathway v2.0 is obtained from [NCI Ras Initiative](https://www.cancer.gov/research/key-initiatives/ras/ras-central/blog/2015/ras-pathway-v2). The pathway structure and gene coordinates were created manually for the visualization. KEGG pathway images and gene relationships were from [KEGG database](https://www.genome.jp/kegg/pathway.html).
 
 ### Detection of modules with mutually exclusive mutations 
 #### Step 1
