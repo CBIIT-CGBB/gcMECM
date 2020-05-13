@@ -61,7 +61,7 @@ Download the example codes ([R codes](examples/03cluster_map.R)) by NCI RAS path
 
 <img src="examples/03_1cluster_map.png" width="400" height="240">  <img src="examples/03_2cluster_map.png" width="90" height="240">
   
-The option example codes ([R codes](examples/05kegg_pathway.R)) were for KEGG database with [OmicPath](https://github.com/CBIIT-CGR/OmicPath) package. The output figures are as the follows (two sub-networks in the pathway and plots).
+The option example codes ([R codes](examples/05kegg_pathway.R)) were for Ras signaling pathway of KEGG with [OmicPath](https://github.com/CBIIT-CGR/OmicPath) package. The output figures are as the follows (two sub-networks in the pathway and plots).
 
 <img src="examples/05kegg_map.png" width="400" height="210">  <img src="examples/05kegg_network.png" width="120" height="210">
 
