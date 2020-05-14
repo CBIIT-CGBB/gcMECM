@@ -72,4 +72,3 @@ For partial model ([R codes](examples/04_1plot_ME.R)) and sub-networks ([R codes
 <img src="examples/04_1plot_ME.png" width="350" height="250">  <img src="examples/04_2plot_ME.png" width="90" height="250">
 
 
-test
