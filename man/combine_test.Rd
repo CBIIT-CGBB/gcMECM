@@ -10,7 +10,7 @@
 }
 
 \usage{
-  combine_test(p, weight, method = c("fisher", "z.transform", "logit"), hetero = FALSE, na.rm = FALSE)
+  combine_test(p, weight, method = c("fisher", "z.transform", "logit"), hetero = FALSE, na.rm = FALSE, weight)
 }
 
 \arguments{
@@ -19,6 +19,7 @@
    \item{method}{one of "fisher", "z.transform" and "logit"}
    \item{hetero}{TRUE is the heterogeneity should be taken into account, FALSE otherwise}
    \item{na.rm}{TRUE if the missing values should be removed from the data, FALSE otherwise}
+   \item{weight}{vector of weights (e.g. sample size of each study) if hetero is TRUE}
 }
 
 \author{
