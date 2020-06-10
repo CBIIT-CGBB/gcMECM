@@ -1,10 +1,23 @@
 # source("http://bioconductor.org/biocLite.R")
 # biocLite("survcomp")
 
-combine_test <- function (p, weight, method = c("fisher", "z.transform", "logit"), hetero = FALSE, na.rm = FALSE) 
+combine_test <- function (p, weight, method = c("fisher", "z.transform", "logit"), hetero = FALSE, na.rm = FALSE, weight) 
 {
     if (hetero) {
-        stop("function to deal with heterogeneity is not implemented yet!")
+        k <- length(p)
+        if (missing(weight)) {
+            weight <- rep(1, k)
+        }
+        cc.ix <- !is.na(p)
+        if (!all(cc.ix) && !na.rm) {
+            stop("missing values are present!")
+        }
+        p <- p[cc.ix]
+        weight <- weight[cc.ix]
+        z <- qnorm(p, lower.tail = FALSE)
+        Q <- sum(weight * (z - mean(z))^2)
+        qpv <- pchisq(Q, df = k - 1, lower.tail = FALSE)
+        return(list(Q = Q, p.value = qpv))
     }
     method <- match.arg(method)
     na.ix <- is.na(p)
