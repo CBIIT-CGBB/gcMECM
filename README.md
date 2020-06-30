@@ -7,6 +7,8 @@ crucial genes in the canonical pathway and discover new cancer-relevant genes an
 functions, which could used to build better prediction models of clinical response and survival. 
 gcMECM also provides informative visualization functionality of mutual exclusivity and network.
 
+For future visualization and clustering analysis, the packages, ([NCIRASPathway](https://github.com/CBIIT-CGR/NCIRASPathway), [OmicPath](https://github.com/CBIIT-CGR/OmicPath) and [GCluster](https://github.com/CBIIT-CGR/GCluster)), could be used.
+
 # Introduction
 
 ### Mutation and pathway data
