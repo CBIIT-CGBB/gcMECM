@@ -26,7 +26,7 @@ Overlay the modules onto the canonical pathways.
 ### Installation
 ``` r
 library(devtools)
-remotes::install_github("CBIIT-CGBB/gcMECM")
+install_github("CBIIT-CGBB/gcMECM")
 ``` 
   
 ### Cluster using Fisher's p values
