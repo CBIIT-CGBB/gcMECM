@@ -1,7 +1,7 @@
 # source("http://bioconductor.org/biocLite.R")
 # biocLite("survcomp")
 
-combine_test <- function (p, weight, method = c("fisher", "z.transform", "logit"), hetero = FALSE, na.rm = FALSE, weight) 
+combine_test <- function (p, weight, method = c("fisher", "z.transform", "logit"), hetero = FALSE, na.rm = FALSE) 
 {
     if (hetero) {
         k <- length(p)
