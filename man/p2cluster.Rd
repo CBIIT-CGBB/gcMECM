@@ -10,7 +10,7 @@
 }
 
 \usage{
-  p2cluster(dat=dat, method="louvain", wt=NULL){
+  p2cluster(dat=dat, method="louvain", wt=NULL)
 }
 
 \arguments{
