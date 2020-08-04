@@ -4,8 +4,8 @@ library(gcMECM)
 
 ## load the output of Fisher's test
 ct     <- "BRCA";
-outf   <- paste0("clu_", ct, ".txt.gz")
-inf1   <- paste0("glm_", ct, "_sum.txt.gz");
+outf   <- paste0("../data/clu_", ct, ".txt.gz")
+inf1   <- paste0("../data/glm_", ct, "_sum.txt.gz");
 dat    <- read.table(gzfile(inf1), header=T);
 ## filter some genes of the genes have high frequency mutations among samples.
 dat    <- do_filter(dat, g=c("TTN", "MUC16"))
