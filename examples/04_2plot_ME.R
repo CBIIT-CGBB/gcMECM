@@ -14,7 +14,7 @@ clu.s  <- paste0(dat[,1], ".", dat[,2]);
 clu.t  <- table(clu.s);
 clu.i  <- which(clu.t > 1);
 clu.u  <- names(clu.t[clu.i]);
-mu.f   <- paste0("mutect_", f.s, "_matrix.txt.gz");
+mu.f   <- paste0("../data/mutect_", f.s, "_matrix.txt.gz");
 mdat   <- read.table(gzfile(mu.f), header=T, row.names=1);
 mdat[mdat>1] <- 1;
 for (clu.x in clu.u[c(2,3,6)]){

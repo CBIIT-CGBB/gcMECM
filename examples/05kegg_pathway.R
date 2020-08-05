@@ -6,7 +6,7 @@ library(gcMECM);
 library(OmicPath);
 library(NCIRASPathway);
 
-g.dir <- "/Users/yhu/Documents/Projects/CBIIT2/RAS_pathway2017/tcga/mut_glm_all2/paper/Chunhua20180918/";
+g.dir <- "../data/";
 gf1   <- paste0(g.dir, "cancer_census_gene_tie1_2018.tsv");
 gene1 <- read.table(gf1, header=T, sep="\t");
 gf2   <- paste0(g.dir, "cancer_census_gene_tie2_2018.tsv");
@@ -23,20 +23,19 @@ if (length(pdat.j) > 0){
 }
 
 ct   <- "BRCA";
-#ct   <- "LUAD";
 cols <- rainbow(10, alpha=0.9);
 col1 <- rainbow(10, alpha=0.2);
 col2 <- rainbow(10, alpha=0.8);
 
 f.s  <- ct;
 ## cluster file
-infile <- paste0("../paper_final2020_analysis0/02p2cluster/clu_", f.s, ".txt.gz");
+infile <- paste0("../data/clu_", f.s, ".txt.gz");
 clu.d  <- read.table(gzfile(infile), header=T);
 clu.u  <- unique(clu.d[,2]);
-pdff   <- paste0("03RAS_pathwaynet2/", f.s, ".pdf");
-pdff3  <- paste0("03RAS_pathwaynet2/", f.s, "_v3.pdf");
-outf   <- paste0("03RAS_pathwaynet2/", f.s, ".txt");
-outf2  <- paste0("03RAS_pathwaynet2/", f.s, "_net.txt");
+pdff   <- paste0("", f.s, ".pdf");
+pdff3  <- paste0("", f.s, "_v3.pdf");
+outf   <- paste0("", f.s, "_out.txt");
+outf2  <- paste0("", f.s, "_net_out.txt");
 out.s  <- NULL;
 out.n  <- NULL;
 
@@ -65,8 +64,8 @@ write.table(out.s, outf, sep="\t", quote=F, row.names=F);
 write.table(out.n, outf2, sep="\t", quote=F, row.names=F);
 
 ## plot network
-pdf(pdff, 12, 12);
-par(mfrow=c(3, 3));
+pdf(pdff, 10, 5);
+par(mfrow=c(1, 2));
 clu.n <- paste0(out.n[,1], ".", out.n[,2]);
 cl.u  <- unique(clu.n);
 for (c.j in cl.u){

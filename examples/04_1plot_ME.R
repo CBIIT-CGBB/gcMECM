@@ -6,13 +6,13 @@ library(gcMECM);
 options(stringsAsFactors = F);
 
 f.s  <- "BRCA";
-inf1 <- paste0("clu_", f.s, ".txt.gz");
+inf1 <- paste0("../data/clu_", f.s, ".txt.gz");
 dat1 <- read.table(inf1, header=T);
 dat1.t <- table(dat1[,2]);
 dat1.i <- which(dat1.t > 50);
 clu1.i <- names(dat1.t)[dat1.i];
 
-inf2   <- paste0("mutect_", f.s, "_matrix.txt.gz");
+inf2   <- paste0("../data/mutect_", f.s, "_matrix.txt.gz");
 dat2   <- read.table(inf2, header=T, row.names=1);
 
 pdff   <- paste0("04_1plot_ME.pdf");

@@ -8,7 +8,7 @@ library(NCIRASPathway);
 out1  <- get_node_layout();
 out1  <- out1[,-1];
 
-g.dir <- "/Users/yhu/Documents/Projects/CBIIT2/RAS_pathway2017/tcga/mut_glm_all2/paper/Chunhua20180918/";
+g.dir <- "../data/";
 gf1   <- paste0(g.dir, "cancer_census_gene_tie1_2018.tsv");
 gene1 <- read.table(gf1, header=T, sep="\t");
 gf2   <- paste0(g.dir, "cancer_census_gene_tie2_2018.tsv");
@@ -25,7 +25,7 @@ col2 <- rainbow(10, alpha=0.8);
 
 f.s  <- ct;
 ## cluster file
-infile <- paste0("clu_", f.s, ".txt.gz");
+infile <- paste0("../data/clu_", f.s, ".txt.gz");
 clu.d  <- read.table(gzfile(infile), header=T);
 clu.u  <- unique(clu.d[,2]);
 pdff   <- paste0(f.s, ".pdf");
