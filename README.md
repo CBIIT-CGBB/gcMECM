@@ -2,7 +2,7 @@
 
 The package constructs the mutually exclusively mutated gene networks from mutation associations and gene interactions with the graph clustering technique 
 and **identifies sub-networks with distinct biological functions with the canonical pathways**. The sub-networks reveal 
-crucial genes in the canonical pathway related to cancer and discover new cancer-relevant genes, which could used to build better prediction models of clinical response and survival. 
+crucial genes in the canonical pathway related to cancers, which could used to build better prediction models for clinical response and survival. 
 gcMECM also provides informative visualization functionality of mutual exclusivity and network.
 
 For additional visualization and clustering analysis, the packages, ([NCIRASPathway](https://github.com/CBIIT-CGR/NCIRASPathway), [OmicPath](https://github.com/CBIIT-CGR/OmicPath) and [GCluster](https://github.com/CBIIT-CGR/GCluster)), could be used.
@@ -14,7 +14,7 @@ The mis-sense mutation and clinical outcome datasets for BRCA (Breast invasive c
 
 ### Detection of modules with mutually exclusive mutations 
 #### Step 1
-Generate the pairwise gene-gene adjacency distance matrix from the p-value of one-tailed Fisher’s exact test and generalized linear models (glm). Select gene pairs with smaller p-values and negative correlation in glm. The Fisher’s exact test p values are used as the distance in the matrix.
+Generate the pairwise gene-gene adjacency distance matrix from the p-value of one-tailed Fisher’s exact test and generalized linear models (glm). Select gene pairs below the p-value cutoff and negative correlation in glm. The Fisher’s exact test p values are used as the distance in the matrix.
 #### Step 2
 Convert the distance matrix into a weighted graph or network using R package igraph. The resulting graph was clustered into modules with the Louvain algorithm. 
 #### Step 3
@@ -37,7 +37,7 @@ dat    <- read.table(gzfile(infile), header=T);
 ## convert the p values to distance matrix
 dat.d  <- p2dist(dat.s[,c(gene.i,gene.j)], as.numeric(dat.s[,pvalue.l]));
 
-## cluster from the distance matrix 
+## construct clusters from the distance matrix 
 clu    <- dist2cluster(dat.d, wt=wt, method="louvain");
 ```
 Download the exmaple codes ([02p2cluster.R](examples/02p2cluster.R))
@@ -48,10 +48,10 @@ library(gcMECM);
 ## load the pathway data
 library(NCIRASPathway);
 
-## get genes of the pathway
+## retrieve genes in the pathway
 g.xy  <- get_node_layout();
 
-## load gene relationships of the pathway
+## load gene relationships in the pathway
 pdat  <- get_relations()
 
 ## read cluster data from dist2cluster
