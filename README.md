@@ -1,13 +1,11 @@
 # gcMECM: Graph Clustering of Mutual Exclusivity of Cancer Mutations 
 
-The package combines graph clustering, mutation association, and gene interaction 
-by the mutually exclusively mutated gene sub-networks **to identify sub-networks with distinct biological functions from 
-pathways**. The sub-networks reveal 
-crucial genes in the canonical pathway and discover new cancer-relevant genes and relative biological 
-functions, which could used to build better prediction models of clinical response and survival. 
+The package constructs the mutually exclusively mutated gene networks from mutation associations and gene interactions with the graph clustering technique 
+and **identifies sub-networks with distinct biological functions with the canonical pathways**. The sub-networks reveal 
+crucial genes in the canonical pathway related to cancer and discover new cancer-relevant genes, which could used to build better prediction models of clinical response and survival. 
 gcMECM also provides informative visualization functionality of mutual exclusivity and network.
 
-For future visualization and clustering analysis, the packages, ([NCIRASPathway](https://github.com/CBIIT-CGR/NCIRASPathway), [OmicPath](https://github.com/CBIIT-CGR/OmicPath) and [GCluster](https://github.com/CBIIT-CGR/GCluster)), could be used.
+For additional visualization and clustering analysis, the packages, ([NCIRASPathway](https://github.com/CBIIT-CGR/NCIRASPathway), [OmicPath](https://github.com/CBIIT-CGR/OmicPath) and [GCluster](https://github.com/CBIIT-CGR/GCluster)), could be used.
 
 # Introduction
 
