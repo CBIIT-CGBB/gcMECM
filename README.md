@@ -1,4 +1,4 @@
-# gcMECM: Graphical Clustering of Mutual Exclusivity of Cancer Mutations 
+# gcMECM: Graph Clustering of Mutual Exclusivity of Cancer Mutations 
 
 The package combines graph clustering, mutation association, and gene interaction 
 by the mutually exclusively mutated gene sub-networks **to identify sub-networks with distinct biological functions from 
