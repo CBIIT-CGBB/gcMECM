@@ -10,13 +10,13 @@
 }
 
 \usage{
-  do.scale(x, newMax, newMin)
+  do.scale(x, newMin, newMax)
 }
 
 \arguments{
    \item{x}{numerical vector}
+    \item{newMin}{minimum of scale}
    \item{newMax}{maximum of scale}
-   \item{newMin}{minimum of scale}
 }
 
 \author{
