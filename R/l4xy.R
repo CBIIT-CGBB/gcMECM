@@ -1,6 +1,6 @@
 
 
-do.scale <- function(x, newMax, newMin){ (x - min(x))/(max(x)-min(x)) * (newMax - newMin) + newMin};
+do.scale <- function(x, newMin, newMax){ (x - min(x))/(max(x)-min(x)) * (newMax - newMin) + newMin};
 
 ## l: layouts; xy: coordination; r:radius
 ## output: the layouts will be in the region: centre=xy and radius=r
