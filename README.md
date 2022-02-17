@@ -5,7 +5,7 @@ and **identifies sub-networks with distinct biological functions with the canoni
 crucial genes in the canonical pathway related to cancers, which could used to build better prediction models for clinical response and survival. 
 gcMECM also provides informative visualization functionality of mutual exclusivity and network.
 
-For additional visualization and clustering analysis, the packages, ([NCIRASPathway](https://github.com/CBIIT-CGR/NCIRASPathway), [OmicPath](https://github.com/CBIIT-CGR/OmicPath) and [GCluster](https://github.com/CBIIT-CGR/GCluster)), could be used.
+For additional visualization and clustering analysis, the packages, ([NCIRASPathway](https://github.com/CBIIT-CGR/NCIRASPathway), [OmicPath](https://github.com/CBIIT-CGR/OmicPath) and [GCluster](https://github.com/CBIIT-CGR/GCluster)), could be used. The associated publication was [**gcMECM: graph clustering of mutual exclusivity of cancer mutations ](https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-021-04505-w).
 
 # Introduction
 
